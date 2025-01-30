@@ -1758,7 +1758,7 @@ h6 {
 .mobile-nav-toggle {
   position: absolute !important;
   /* Ensure positioning */
-  top: 5px !important;
+  top: 0px !important;
   /* Adjust this value to move it higher */
   right: 15px !important;
   /* Keep it aligned to the right */
