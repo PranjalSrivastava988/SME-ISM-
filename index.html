@@ -179,7 +179,23 @@
             transition: transform 0.5s ease-in-out;
          }
         
-        
+        .justified {
+            text-align: justify;
+            text-justify: inter-word; /* Ensures spacing like MS Word */
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .justified p {
+         color: white;
+         hyphens: auto; /* Helps in breaking long words */
+         word-spacing: 2px; /* Adjusts spacing for smoother justification */
+         line-height: 1.6; /* Better readability */
+       
+        }
        
         
         
@@ -511,8 +527,8 @@
                <div class="section-header">
                   
                   <h2 style="color: white;">About the Department</h2>
-                  <div class="contact-address" style="text-align: justify; background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-                  <p style="color: white;">The Department of Applied Geophysics at IIT (ISM), established in 1957
+                  <div class="justified">
+                  <p">The Department of Applied Geophysics at IIT (ISM), established in 1957
                      during the International Geophysical Year, is a premier institution in India
                      for geophysical education and research. With over six decades of
                      excellence, the department offers diverse programs, including a three-year
@@ -528,6 +544,14 @@
                      academia, the department continues to lead in cutting-edge research and
                      innovation.</p></div>
                </div>
+		    <script>
+                  document.addEventListener("DOMContentLoaded", function() {
+                      let paragraphs = document.querySelectorAll(".contact-address p");
+                      paragraphs.forEach(p => {
+                          p.innerHTML = p.innerHTML.replace(/\s+/g, ' &nbsp;');
+                      });
+                  });
+              </script>
 
                <div class="section-header">
                   
