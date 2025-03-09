@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>SME 2025</title>
+      <meta content="SME 2025 Website" name="description">
+      <meta content="SME 2025 Home site." name="SME 2025">
+      <meta content="SME 2025, SME2025, SME, CENTENARY NATIONAL SEMINARON STRONG MOTION EARTHQUAKE: STRUCTURAL RESPONSE MODELLING AND AIDED DESIGNING, ISM, Indian School of Mines, IIT(ISM), Indian Institute of Technology (Indian School of Mines), Indian Institute of Technology (ISM), Indian Institute of Technology, Dhanbad, Dept of Applied Physics, electron impact collision, elastic cross section, ionization, cross section, atomic physics, molecular physics, atomic and molecular, AMPL, Atomic and Molecular Physics Lab" name="keywords">
+      <meta content="Riya Singh Rathore" name="author">
+      <!-- Favicons -->
+      <link href="assetscon/img/favicon.png" rel="icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="assetscon/img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assetscon/img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assetscon/img/favicon-16x16.png">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="style1.css" rel="stylesheet">
+      <link href="style2.css" rel="stylesheet">
+      <link href="style3.css" rel="stylesheet">
+      <link href="style4.css" rel="stylesheet">
+      <link href="style5.css" rel="stylesheet">
+      <!-- Template Main CSS File -->
+      <link href="style6.css" rel="stylesheet">
+      <!-- =======================================================
+         * Template Name: TheEvent
+         * Updated: Jan 29 2024 with Bootstrap v5.3.2
+         * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+         * Author: BootstrapMade.com
+         * License: https://bootstrapmade.com/license/
+         ======================================================== -->
+      <style>
+         @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+         }
+
+         .blinking-text {
+            color: #dc3545;
+            animation: blink 2s infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+
+         /* Updated styles for navbar */
+         #header {
+            background: rgba(128, 0, 0, 0.9) !important;
+            transition: all 0.5s;
+            box-shadow: none !important;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+         }
+
+         /* Keep the same background when scrolled */
+         #header.header-scrolled {
+            background: rgba(128, 0, 0, 0.9) !important;
+            position: fixed;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+         }
+
+          @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;600&display=swap');
+
+         .navbar a:focus, 
+         .navbar a {
+            font-family: 'Cinzel', serif;  /* Elegant and premium look */
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff !important;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0px 0px 10px rgba(255, 0, 0, 0.6);
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+         }
+
+         .navbar a:hover {
+            color: #f82249 !important;
+         }
+
+         /* Make dropdown menu match the header color */
+         .navbar .dropdown ul {
+            background: rgba(128, 0, 0, 0.9) !important;
+         }
+
+         /* Keep the same background for mobile menu */
+         @media (max-width: 1199px) {
+            #header.mobile-nav-active {
+               background: rgba(128, 0, 0, 0.9) !important;
+            }
+		 .navbar a {
+            font-family: 'Cinzel', serif;  /* Elegant and premium look */
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff !important;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0px 0px 10px rgba(255, 0, 0, 0.6);
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+         }
+	}
+
+         #hero {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+         }
+
+         .hero-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+         }
+
+         /* Add padding to specific section headers */
+         #abstracts .section-header,
+         #objectives .section-header,
+         #dates .section-header,
+         #fees .section-header,
+         #exhibition .section-header,
+         #adrates .section-header,
+         #payment .section-header,
+         #committee .section-header {
+            padding-top: 40px;
+         }
+
+         /* Parallax effect for hero section */
+         #hero {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+         }
+
+         .hero-container {
+            background-attachment: fixed !important;
+            transform: translateZ(0);
+            will-change: transform;
+         }
+
+         /* Optional: Add smooth transition for better effect */
+         .hero-container * {
+            transition: all 0.3s ease-out;
+         }
+
+         /* Enhance the parallax effect on scroll */
+         @media (min-width: 768px) {
+            .hero-container {
+                transform: translateY(var(--parallax-offset, 0));
+            }
+         }
+
+         /* Snap scrolling */
+         html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+         }
+
+         /* Make each section act as a snap point */
+         section {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         /* Adjust header to stay on top */
+         #header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+         }
+
+         /* Add padding to sections to account for fixed header */
+         section:not(#hero) {
+            padding-top: 72px; /* Adjust this value based on your header height */
+         }
+
+         /* Special handling for hero section */
+         #hero {
+            scroll-snap-align: start;
+            height: 100vh;
+         }
+
+         /* Smooth transition between sections */
+         .section-transition {
+            transition: transform 0.5s ease-in-out;
+         }
+        
+        .justified {
+            text-align: justify;
+            text-justify: inter-word; /* Ensures spacing like MS Word */
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .justified p {
+         color: white;
+         hyphens: auto; /* Helps in breaking long words */
+         word-spacing: 2px; /* Adjusts spacing for smoother justification */
+         line-height: 1.6; /* Better readability */
+       
+        }
+       
+        
+        
+      </style>
+   </head>
+   <body>
+      <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center">
+	      <div class="logo-container" style="background-color: white; height: 60px; padding: 5px 10px; border-radius: 5px; display: flex !important; margin-left:2.5% ;">
+            <a href="https://www.iitism.ac.in/" class="logo">
+               <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531199/logo1_lnzpff.png" alt="College Logo" style="height: 50px;">
+            </a>
+      </div>
+         <div class="container-fluid container-xxl d-flex align-items-center justify-content-end">
+            <nav id="navbar" class="navbar">
+               <!--<div class="logo-container" style="background-color: white; height: 60px; padding: 5px 10px; border-radius: 5px; display: flex !important; align-items: left;">
+                  <a href="https://www.iitism.ac.in/" class="logo">
+                     <img src="logo1.png" alt="College Logo" style="height: 50px;">
+                  </a>
+               </div> ======= Header ======= -->
+               <ul>
+                  <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                  <li><a class="nav-link scrollto" href="#about">About</a></li>
+                  <li><a class="nav-link scrollto" href="#committees">Committees</a></li>
+                 <!--   <li><a class="nav-link scrollto" href="#contactus">Contact Us</a></li>-->
+                  <li><a class="nav-link scrollto" href="#program">Program</a></li>
+                  <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+                  <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
+                  <li><a class="nav-link scrollto" href="#awards">Awards</a></li>
+                  <li><a class="nav-link scrollto" href="#publicity">Publicity</a></li>
+                  
+                  <li class="dropdown">
+                     <a href="" onclick="return false;"><span>More Information</span></a>
+                     <ul>
+                        <li><a class="nav-link scrollto" href="#accomodations" data-bs-auto-close="true">Accommodation</a></li>
+                        
+                        
+                        <li><a class="nav-link scrollto" href="#touristattractions" data-bs-auto-close="true">Tourist Attractions</a></li>
+                        <li><a class="nav-link scrollto" href="#announcements" data-bs-auto-close="true">Announcements</a></li>
+                        <li><a class="nav-link scrollto" href="#developers" data-bs-auto-close="true">Developers' Section</a></li>
+                        <hr style="height:2px;background-color:red">
+                        
+                        <li><a class="nav-link scrollto" href="https://agp.iitism.ac.in/" target="_blank" data-bs-auto-close="true">Local Research</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+         </div>
+      </header>
+      <!-- End Header -->
+      <!-- Add this after the header section -->
+      <div class="page-indicator">
+         <div class="dot" data-section="hero" title="Home"></div>
+         <div class="dot" data-section="about" title="About"></div>
+         <div class="dot" data-section="committees" title="Committees"></div>
+          <!-- <div class="dot" data-section="contactus" title="Contact Us"></div>-->
+         <div class="dot" data-section="program" title="Program"></div>
+         <div class="dot" data-section="venue" title="Venue"></div>
+         <div class="dot" data-section="registration" title="Registration"></div>
+         <div class="dot" data-section="awards" title="Awards"></div>
+         <div class="dot" data-section="publicity" title="Publicity"></div>
+         <div class="dot" data-section="hotels" title="Accommodation"></div>
+         <div class="dot" data-section="touristattractions" title="Tourist Attractions"></div>
+         <div class="dot" data-section="accomodations" title="Accommodation"></div>
+      </div>
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+            <!-- Video Background -->
+            <video autoplay muted loop id="myVideo" style="
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               min-width: 100%;
+               min-height: 100%;
+               width: auto;
+               height: auto;
+               transform: translateX(-50%) translateY(-50%);
+               object-fit: cover;
+               z-index: -1;
+            ">
+               <source src="https://res.cloudinary.com/ddg8s5abe/video/upload/v1741531243/Heritage_Video_leo4fo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
+            
+            <!-- Dark overlay -->
+            <div style="
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: rgba(0, 0, 0, 0.3);
+               z-index: -1;
+            "></div>
+
+            <!-- Content -->
+            <h1 class="text-center" style="font-size: 2em;">
+               <span class="blinking-text">CENTENARY NATIONAL SEMINAR</span>
+               <br>ON<br>
+               STRONG MOTION EARTHQUAKE: STRUCTURAL RESPONSE<br> MODELLING AND AIDED DESIGNING
+            </h1>
+           <!-- Logo Container -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;">
+   <div style="background: white; padding: 10px; border-radius: 5px;">
+      <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531199/logo_jv6prc.jpg" alt="Seminar Logo 1" style="width: 100px; height: 100px; object-fit: contain;">
+   </div>
+   <div style="background: white; padding: 10px; border-radius: 5px;">
+      <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531236/iitism-logo_is4ahc.png" alt="Seminar Logo 2" style="width: 100px; height: 100px; object-fit: contain;">
+   </div>
+</div>
+            <p class="mb-4 pb-0" style="color: yellow; font-size: 1.5em; font-weight: bold;">March 21-23, 2025</p>
+            <p class="mb-4 pb-0"><font color="yellow">Organized by</font></p>
+            <p class="mb-4 pb-0" style="color: white; line-height: 1.6;">
+               Department of Applied Geophysics<br>
+               Indian Institute of Technology (Indian School of Mines)<br>
+               Dhanbad - 826004 Jharkhand, India
+            </p>
+         </div>
+      </section>
+      <!-- End Hero Section -->
+      <main id="main">
+         <!--
+
+         <section id="abouts" style="min-height: 100vh; padding: 60px 0;">
+            <div class="container position-relative" data-aos="fade-up">
+            <br>
+               <div class="row">
+                  
+                  <div class="col-lg-12 text-center">
+                     <h3 style="margin-bottom: 20px; font-size: 2em;">About the Department</h3>
+                     <p style="text-align: justify; margin-bottom: 40px; font-size: 0.9em; line-height: 1.8; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                        The Department of Applied Geophysics at IIT (ISM), established in 1957
+                        during the International Geophysical Year, is a premier institution in India
+                        for geophysical education and research. With over six decades of
+                        excellence, the department offers diverse programs, including a three-year
+                        M.Sc. Tech., a five-year Integrated M.Tech. in Applied Geophysics, a two-
+                        year M.Tech. in Petroleum Exploration (in collaboration with the
+                        Department of Applied Geology since 1983), an M.Tech. in Earthquake
+                        Science and Engineering (introduced in 2015-16), and doctoral studies. Equipped with advanced geophysical instruments, a seismological
+                        observatory, and specialized laboratories in areas like geophysical
+                        inversion, instrumentation, rock physics, and coal geophysics, the
+                        department is recognized as a vibrant research hub through initiatives like
+                        UGC-SAP, DRS, CAS, and DST-FIST. With alumni holding esteemed positions
+                        worldwide in oil companies, mineral industries, R&D organizations, and
+                        academia, the department continues to lead in cutting-edge research and
+                        innovation.
+                     </p>
+                  </div>
+
+                  
+                  <div class="col-lg-12">
+                     <h3 style="margin-bottom: 20px;">Themes</h3>
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <ol style="padding-left: 20px; font-size: 1em; line-height: 1.4;">
+                              <li>Strong motion earthquakes</li>
+                              <li>Seismic hazards, risk and mitigation</li>
+                              <li>Strong ground motions and soil-structure interaction</li>
+                              <li>Numerical analysis for performance-based designing</li>
+                              <li>Innovative technologies and safety engineering of structures</li>
+                              <li>Lifelines and resilience</li>
+                              <li>Liquefaction evaluation</li>
+                              <li>Para seismic devices</li>
+                           </ol>
+                        </div>
+                        <div class="col-lg-6">
+                           <ol start="9" style="padding-left: 20px; font-size: 1em; line-height: 1.4;">
+                              <li>Geophysical methods aiding in construction of engineering projects</li>
+                              <li>Geology, groundwater and geotechnical risks</li>
+                              <li>Remote sensing for strong earthquake mitigation</li>
+                              <li>Effects of strong earthquakes in mining, minerals, petroleum and other energy sectors</li>
+                              <li>Impacts of strong ground motions on environment</li>
+                              <li>Near surface stress-strain evaluation and geotechnical modelling</li>
+                              <li>AI/ML based designing and smart health monitoring of structures</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <h3>CONFERENCE FEE <font color="red">*</font></h3>
+                     <p>
+                     <table>
+                        <thead>
+                           <tr>
+                              <th>o</th>
+                              <th><font color="yellow">Onsite Participation</font></th>
+                              <th></th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td></td>
+                              <td>Delegates (Industry)</td>
+                              <td>:</td>
+                              <td>&#8377; 7000</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Delegates (Academic Institution and R & D Labs)</td>
+                              <td>:</td>
+                              <td>&#8377; 5000</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Research Scholar</td>
+                              <td>:</td>
+                              <td>&#8377; 3000</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Students</td>
+                              <td>:</td>
+                              <td>&#8377; 1000</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Spouse/Accompanying Person</td>
+                              <td>:</td>
+                              <td>&#8377; 2500</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Foreign Delegates</td>
+                              <td>:</td>
+                              <td>$ 300</td>
+                           </tr>
+                           <tr>
+                              <td></td>
+                              <td>Foreign Delegates with accompanying person</td>
+                              <td>:</td>
+                              <td>$ 400</td>
+                           </tr>
+                           
+                           <tr>
+                              <th></th>
+                           </tr>
+                        </table>
+                        <font color="red">*</font><i>Registration fee includes breakfast, lunch and dinner at the
+                           seminar, access to the scientific session seminar documents including extended
+                           abstract volume and certificate.</i>
+                           </p>
+                           <p>
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>o</th>
+                                       <th><font color="yellow">Onsite Participation</font></th>
+                                       <th></th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td></td>
+                                       <td>Participants attending online, 70% of the registration fee will be waived.</td>
+                                       
+                                    </tr>
+                                    
+                                   
+                                    
+                                    <tr>
+                                       <th></th>
+                                    </tr>
+                                 </table>
+                                 <font color="red">*</font><i>Registration fee includes online access to the scientific session,
+                                    soft copy of extended abstract volume and certificate.</i>
+                                    </p>
+                           
+                  </div>
+                  <div id="dates" class="col-lg-6">
+                     <h3>Important Dates</h3>
+                     <p>
+                     <ul>
+                        <li>
+                           <font color="yellow">Abstract Submission Deadline:</font>
+                           <ul>
+                              <li>February 15th, 2025</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <font color="yellow">Notification of Acceptance:</font>
+                           <ul>
+                              <li>February 21st, 2025</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <font color="yellow">Early Bird Registration:</font>
+                           <ul>
+                              <li>Opens: February 21st, 2025</li>
+                              <li>Closes: March 10th, 2025</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <font color="yellow">Late Registration<sup>*</sup>:</font>
+                           <ul>
+                              <li>March 11th - 17th, 2025</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <font color="yellow">Onsite Registration<sup>**</sup>:</font>
+                           <ul>
+                              <li>March 21st, 2025</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <font color="yellow">Conference Dates:</font>
+                           <ul>
+                              <li>March 21st - 23rd, 2025</li>
+                           </ul>
+                        </li>
+                     </ul>
+                     <p style="font-size: 0.8em; margin-top: 10px;">
+                        <sup>*</sup>Late Registration is available @ additional Rs. 500/- for all participants<br>
+                        <sup>**</sup>Onsite registration is available @ additional Rs. 1000/- for all participants
+                     </p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+          About Section -->
+         
+         <section id="about" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531123/1new3_tpoqu3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  
+                  <h2 style="color: white;">About the Department</h2>
+                  <div class="justified">
+                  <p">The Department of Applied Geophysics at IIT (ISM), established in 1957
+                     during the International Geophysical Year, is a premier institution in India
+                     for geophysical education and research. With over six decades of
+                     excellence, the department offers diverse programs, including a three-year
+                     M.Sc. Tech., a five-year Integrated M.Tech. in Applied Geophysics, a two-
+                     year M.Tech. in Petroleum Exploration (in collaboration with the
+                     Department of Applied Geology since 1983), an M.Tech. in Earthquake
+                     Science and Engineering (introduced in 2015-16), and doctoral studies. Equipped with advanced geophysical instruments, a seismological
+                     observatory, and specialized laboratories in areas like geophysical
+                     inversion, instrumentation, rock physics, and coal geophysics, the
+                     department is recognized as a vibrant research hub through initiatives like
+                     UGC-SAP, DRS, CAS, and DST-FIST. With alumni holding esteemed positions
+                     worldwide in oil companies, mineral industries, R&D organizations, and
+                     academia, the department continues to lead in cutting-edge research and
+                     innovation.</p></div>
+               </div>
+		    <script>
+                  document.addEventListener("DOMContentLoaded", function() {
+                      let paragraphs = document.querySelectorAll(".contact-address p");
+                      paragraphs.forEach(p => {
+                          p.innerHTML = p.innerHTML.replace(/\s+/g, ' &nbsp;');
+                      });
+                  });
+              </script>
+
+               <div class="section-header">
+                  
+                  <h2 style="text-align: center; color: white;">Themes</h2>
+                  <!-- Executive Committee Column -->
+                  
+                  <div class="contact-address" style="text-align: left; background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                     
+                     <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                       <ul style="list-style-type: disc; color: yellow; padding-left: 20px; flex: 1; min-width: 300px;">
+                         <li>Strong Motion Earthquakes</li>
+                         <li>Seismic Hazards, Risk and Mitigation</li>
+                         <li>Strong Ground motions and Soil-Structure Interaction</li>
+                         <li>Numerical Analysis for Performance-Based Designing</li>
+                         <li>Innovative Technologies and Safety Engineering of Structures</li>
+                         <li>Lifelines and Resilience</li>
+                         <li>Liquefaction Evaluation</li>
+                         <li>Para Seismic Devices</li>
+                       </ul>
+                       <ul style="list-style-type: disc; color: yellow; padding-left: 20px; flex: 1; min-width: 300px;">
+                         <li>Geophysics and Aided Aonstruction of Engineering Projects</li>
+                         <li>Geology, Groundwater and Geotechnical Risks</li>
+                         <li>Remote Sensing for Strong Earthquake Mitigation</li>
+                         <li>Effects of Strong Earthquakes in Mining, Minerals, Petroleum and other energy sectors</li>
+                         <li>Impacts of Strong Ground Motions on Environment</li>
+                         <li>Near Surface Stress-Strain Evaluation and Geotechnical Modelling</li>
+                         <li>AI/ML Based Designing and Smart Health Monitoring of Structures</li>
+                       </ul>
+                     </div>
+                     <hr style="height: 2px; background-color: red; margin-top: 20px;">
+                     <div style="text-align: center;">
+                       <a href="https://drive.google.com/file/d/1W-aHVpjG2ek2pBZ8OWFQ9EslTPaTP4Na/view?usp=drive_link" download target="_blank" style="color: white; font-weight: bold; text-decoration: none; background: red; padding: 10px 15px; border-radius: 5px; display: inline-block;">
+                         DOWNLOAD SUB-THEMES
+                       </a>
+                     </div>
+                   </div>
+                   
+                 
+                   
+                   
+                   
+               </div>
+
+               <div class="section-header">
+               <div class="row contact-info" >
+                  <!-- Executive Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h2 style="color: white;">Conference Fee</h2>
+                        <p>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                           <li><p>
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>o</th>
+                                       <th><font color="yellow">Onsite Participation</font></th>
+                                       <th></th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td></td>
+                                       <td>Delegates (Industry)</td>
+                                       <td>:</td>
+                                       <td>&#8377;7000</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Delegates (Academic Institution and R & D Labs)</td>
+                                       <td>:</td>
+                                       <td>&#8377;5000</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Research Scholar</td>
+                                       <td>:</td>
+                                       <td>&#8377;3000</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Students</td>
+                                       <td>:</td>
+                                       <td>&#8377;1000</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Spouse/Accompanying Person</td>
+                                       <td>:</td>
+                                       <td>&#8377;2500</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Foreign Delegates</td>
+                                       <td>:</td>
+                                       <td>$300</td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>Foreign Delegates with accompanying person</td>
+                                       <td>:</td>
+                                       <td>$400</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                       <th></th>
+                                    </tr>
+                                 </table>
+                                 <font color="red">*</font><i>Registration fee includes breakfast, lunch and dinner at the
+                                    seminar, access to the scientific session seminar documents including extended
+                                    abstract volume and certificate.</i>
+                                    </p>
+                                    <p>
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th>o</th>
+                                                <th><font color="yellow">Online Participation</font></th>
+                                                <th></th>
+                                                <th></th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td></td>
+                                                <td>Participants attending online, 70% of the registration fee will be waived.</td>
+                                                
+                                             </tr>
+                                             
+                                            
+                                             
+                                             <tr>
+                                                <th></th>
+                                             </tr>
+                                          </table>
+                                          <font color="red">*</font><i>Registration fee includes online access to the scientific session,
+                                             soft copy of extended abstract volume and certificate.</i>
+                                             </p></li>
+                           
+                        </ul>
+                        </p>
+                     </div>
+                  </div>
+                  
+
+                  <!-- Local Organizing Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h2 style="color: white;">Important Dates</h2>
+                        <br><br>
+                        <p>
+                           <ul>
+                              <li>
+                                 <font color="yellow">Last Date of Abstract Submission:</font>
+                                 <ul>
+                                    <li>March 3rd, 2025</li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <font color="yellow">Acceptance of Abstract:</font>
+                                 <ul>
+                                    <li>March 10th, 2025</li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <font color="yellow">Early Bird Registration:</font>
+                                 <ul>
+                                    <li>Opens: February 21st, 2025</li>
+                                    <li>Closes: March 10th, 2025</li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <font color="yellow">Late Registration<sup>*</sup>:</font>
+                                 <ul>
+                                    <li>March 11th - 17th, 2025</li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <font color="yellow">Onsite Registration<sup>**</sup>:</font>
+                                 <ul>
+                                    <li>March 21st, 2025</li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <font color="yellow">Conference Dates:</font>
+                                 <ul>
+                                    <li>March 21st - 23rd, 2025</li>
+                                 </ul>
+                              </li>
+                           </ul><br>
+                           <p style="font-size: 0.8em; margin-top: 10px;">
+				   <br>
+                              <sup>*</sup>Late Registration is available @ additional Rs. 500/- for all participants<br><br><br>
+                              <sup>**</sup>Onsite registration is available @ additional Rs. 1000/- for all participants
+                           </p>
+                           </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+      
+
+         
+        
+         <!-- ======= Committee Section ======= -->
+         <section id="committees" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531197/img1_fkzt7s.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up" >
+               <div class="section-header">
+                  <h2 style="color: white;">Committees</h2>
+                  <p style="color: yellow;">Executive and Local Organizing Committees</p>
+               </div>
+               <div class="row contact-info">
+                  <!-- Executive Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white;">Executive Committee</h3>
+                        <p>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                           <li><strong>Chief Patron</strong><br>
+                               Prof. Prem Vrat<br>
+                               Chairman, BoG, IIT(ISM) Dhanbad</li>
+                           <br>
+                           <li><strong>Patron</strong><br>
+                               Prof. Sukumar Mishra<br>
+                               Director, IIT(ISM) Dhanbad</li>
+                           <br>
+                           <li><strong>Co-Patron</strong><br>
+                               Prof. Dheeraj Kumar<br>
+                               Deputy Director, IIT(ISM) Dhanbad</li>
+                        </ul>
+                        <br>
+                        </p>
+                     </div>
+                  </div>
+
+                  <!-- Local Organizing Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white;">Local Organizing Committee</h3>
+                        
+                        <!-- Convener Row -->
+                        <div class="row mb-4">
+                           <div class="col-12">
+                              <strong>Chairman-cum-Convener</strong><br>
+                              Prof. P.K. KHAN<br>
+                              <a href="tel:+919431711020">+91-9431711020</a><br>
+                              <a href="mailto:khanprosanta1966@iitism.ac.in">khanprosanta1966@iitism.ac.in</a>
+                           </div>
+                        </div>
+
+                        <!-- Co-Conveners Row -->
+                        <div class="row mb-4">
+                           <div class="col-md-6">
+                              <strong>Co-Convener</strong><br>
+                              Prof. Swarandeep Sahoo<br>
+                              <a href="tel:+919546942555">+91-9546942555</a><br>
+                              <a href="mailto:swarandeep@iitism.ac.in">swarandeep@iitism.ac.in</a>
+                           </div>
+                           <div class="col-md-6">
+                              <strong>Co-Convener</strong><br>
+                              Prof. Ujjal Kumar Borah<br>
+                              <a href="tel:+919640626068">+91-9640626068</a><br>
+                              <a href="mailto:ujjalborah@iitism.ac.in">ujjalborah@iitism.ac.in</a>
+                           </div>
+                        </div>
+
+                        <!-- Other Members Row -->
+                        <div class="row">
+                           <div class="col-md-6">
+                              <strong>Organizing Secretary</strong><br>
+                              Prof. Niptika Jana<br>
+                              <a href="tel:+919903080428">+91-9903080428</a><br>
+                              <a href="mailto:niptikaj@iitism.ac.in">niptikaj@iitism.ac.in</a>
+                           </div>
+                           <div class="col-md-6">
+                              <strong>Treasurer</strong><br>
+                              Prof. Giri Yellalacheruvu<br>
+                              <a href="tel:+919819235598">+91-9819235598</a><br>
+                              <a href="mailto:giriy@iitism.ac.in">giriy@iitism.ac.in</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- 
+         <section id="contactus" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1new3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2 style="color: white;">Contact Us</h2>
+                  
+               </div>
+               <div class="row contact-info">
+                  
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white;"><strong>Convener</strong></h3>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <br>
+                              Prof. P.K. KHAN<br>
+                              <a href="tel:+919431711020">+91-9431711020</a><br>
+                              <a href="mailto:khanprosanta1966@iitism.ac.in">khanprosanta1966@iitism.ac.in</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white;"><strong>Organizing Secretary</strong></h3>
+                        
+                        
+
+                        
+                        <div class="row">
+                           <div class="col-md-6">
+                              <br>
+                              Prof. Niptika Jana<br>
+                              <a href="tel:+919903080428">+91-9903080428</a><br>
+                              <a href="mailto:niptikaj@iitism.ac.in">niptikaj@iitism.ac.in</a>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br><br><br>
+               <div class="section-header">
+                  <h2 style="color: white;">Mail your grievances to</h2>
+                  
+                  
+               </div> 
+               <div class="row contact-info">
+   
+
+                 
+                  <div >
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white; text-align:center;"><a href="mailto:sme.2025@iitism.ac.in"><strong>sme.2025@iitism.ac.in</strong></a></h3>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>-->
+
+          <!-- ======= Program Section ======= -->
+          <section id="program" class="section-with-bg" style="
+             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531199/img2_mnz2b0.jpg');
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             color: white;
+          ">
+             <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 style="color: white;">Program</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <h3 style="color: yellow; margin: 50px 0;">To be updated soon</h3>
+                    </div>
+                </div>
+             </div>
+          </section>
+          <!-- End Program Section -->
+      
+
+
+         <!-- ======= Venue Section ======= -->
+         <section id="venue" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531123/background_glbbv6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2 style="color: white;">Venue</h2>
+               </div>
+
+               <!-- IIT ISM Part -->
+               <div class="container-fluid" data-aos="fade-up">
+                  <div class="row g-0">
+                     <div class="col-lg-6 venue-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14600.47046990868!2d86.43249303102493!3d23.814416255663343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1707118919322!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                     <div class="col-lg-6 venue-info">
+                        <div class="row justify-content-center">
+                           <div class="col-11 col-lg-8 position-relative">
+                              <h3><a href="https://www.iitism.ac.in/" target="_blanck" style="color: white; text-align:center; ">IIT(ISM) Dhanbad, Jharkhand, India</a></h3>
+                              <p style="color: white;">Situated in the heart of the country's prime coking coal belt, 220 kms from Ranchi with a campus spread over an area of 393 acres, the fully residential IIT(ISM) has all the facilities of world class academic institute. What started as an institution to impart mining education has graduated into a full-fledged technical institution of international acclaim offering a host of programmes like B. Tech., M. Tech., M. Sc., M.Sc. Tech., M.A., MBA and Ph.D. by 17 departments</p>
+                  </div>
+               </div>
+            </div>
+               </div>
+                  
+                  <!-- How to Reach Part -->
+                  <div class="section-header" style="margin-top: 50px;">
+                     <h1 style="color: white; text-align: center;">How to reach?</h1>
+                  </div>
+                  <div class="row contact-info">
+                     <div class="col-md-4" style="margin-top: 5%;">
+                        <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                           <h3 style="color: white;">By Air</h3>
+                           <p style="color: white;">Closest airports to Dhanbad:
+                           <ul>
+                              <li>Durgapur (RDP)</li>
+                              <ul>
+                                 <li>95 kms; about 1.5 hrs by taxi.</li>
+                                 <li><a href="https://www.flightconnections.com/flights-from-durgapur-rdp" target="_blanck">Connects: Delhi, Mumbai, Chennai, Bengaluru, Hyderabad, Bhubaneswar, Guwahati, Siliguri</a></li>
+                              </ul>
+                              <li>Ranchi (IXR)</li>
+                              <ul>
+                                 <li>155 kms; about 3 hrs by taxi.</li>
+                                 <li><a href="https://www.flightconnections.com/flights-from-ranchi-ixr" target="_blanck">Connects: All major airports</a></li>
+                              </ul>
+                              <li>Deoghar (DGH)</li>
+                              <ul>
+                                 <li>111 kms; about 3 hrs by taxi.</li>
+                                 <li><a href="https://www.flightconnections.com/flights-from-deoghar-dgh" target="_blanck">Connects: Delhi, Kolkata, Bangalore, Patna</a></li>
+                              </ul>
+                              <li>Bodh Gaya (GAY)</li>
+                              <ul>
+                                 <li>212 kms; about 3.5 hrs by taxi.</li>
+                                 <li><a href="https://www.flightconnections.com/flights-from-gaya-gay" target="_blanck">Connects: Delhi, Kolkata; +international</a></li>
+                              </ul>
+                              <li>Kolkata (CCU)</li>
+                              <ul>
+                                 <li>287 kms; about 4.5 hrs by taxi.</li>
+                                 <li><a href="https://www.flightconnections.com/flights-from-kolkata-ccu" target="_blanck">Connects: All major airports; +international</a></li>
+                              </ul>
+                           </ul>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-4" style="margin-top: 5%;">
+                        <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                           <h3 style="color: white;">By Rail</h3>
+                           <p style="color: white;">Closest railway stations to Dhanbad:
+                           <ul>
+                              <li>Dhanbad (DHN)</li>
+                              <ul>
+                                 <li>3 kms; about 10 mins by taxi.</li>
+                                 <li><a href="https://www.irctc.co.in/nget/" target="_blanck">Connects: Kolkata, Delhi, Mumbai, Chennai etc.</a> </li>
+                              </ul>
+                              <li>Gomoh (GMO)</li>
+                              <ul>
+                                 <li>37 kms; about 30 mins by taxi.</li>
+                                 <li><a href="https://www.irctc.co.in/nget/" target="_blanck">Connects: Delhi, Bhubaneswar, Kolkata etc.</a></li>
+                              </ul>
+                              <li>Mahuda (MHQ)</li>
+                              <ul>
+                                 <li>22 kms; about 25 mins by taxi.</li>
+                                 <li><a href="https://www.irctc.co.in/nget/" target="_blanck">Connects: Delhi, Bhubaneswar, Kharagpur etc.</a></li>
+                              </ul>
+                              <li>Asansol (ASN)</li>
+                              <ul>
+                                 <li>63 kms; about 1 hr by taxi.</li>
+                                 <li><a href="https://www.irctc.co.in/nget/" target="_blanck">Connects: Delhi, Kolkata, Patna etc.</a></li>
+                              </ul>
+                           </ul>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-4" style="margin-top: 5%;">
+                        <div class="contact-email" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                           <h3 style="color: white;">By Road</h3>
+                           <p style="color: white;">Connects all major cities around Dhanbad
+                           <ul>
+                              <li><a href="https://www.bing.com/search?q=ranchi+to+dhanbad+distance+by+road&form=ANNTH1&refig=1712bd7c0ac34ef4958e38d87f572b47&pc=DCTS&pq=ranchi+to+dhanbad&pqlth=17&assgl=34&sgcn=ranchi+to+dhanbad+distance+by+road&qs=AS&smvpcn=0&swbcn=10&sctcn=0&sc=10-17&sp=5&ghc=0&cvid=1712bd7c0ac34ef4958e38d87f572b47&clckatsg=1&hsmssg=0" target="_blank">Ranchi</a></li>
+                              <li><a href="https://www.bing.com/search?q=kolkata+to+dhanbad+distance+by+road&qs=n&form=QBRE&sp=-1&lq=0&pq=kolkata+to+dhanbad+distance+by+road&sc=12-35&sk=&cvid=AF0C0F78B07446839468A89636AE05D6&ghsh=0&ghacc=0&ghpl=" target="_blank">Kolkata</a></li>
+                              <li><a href="https://www.bing.com/search?q=patna+to+dhanbad+distance+by+road&qs=n&form=QBRE&sp=-1&lq=0&pq=patna+to+dhanbad+distance+by+road&sc=12-33&sk=&cvid=704C57E96B8F469A97F6403B3516EB7D&ghsh=0&ghacc=0&ghpl=" target="_blank">Patna</a></li>
+                              <li><a href="https://www.bing.com/search?q=durgapur+to+dhanbad+distance+by+road&qs=n&form=QBRE&sp=-1&lq=0&pq=durgapur+to+dhanbad+distance+by+road&sc=8-36&sk=&cvid=242794393932447496AC08259E33C79F&ghsh=0&ghacc=0&ghpl=" target="_blank">Durgapur</a></li>
+                              <li><a href="https://www.bing.com/search?q=jamshedpur+to+dhanbad+distance+by+road&qs=n&form=QBRE&sp=-1&lq=0&pq=jamshedpur+to+dhanbad+distance+by+road&sc=12-38&sk=&cvid=8FB38740E92F40F889AB544B26DF8547&ghsh=0&ghacc=0&ghpl=" target="_blank">Jamshedpur</a></li>
+                              <li><a href="https://www.bing.com/search?q=kharagpur+to+dhanbad+distance+by+road&qs=n&form=QBRE&sp=-1&lq=0&pq=kharagpur+to+dhanbad+distance+by+road&sc=12-37&sk=&cvid=A0DFE0839FF948749E06709F5B014304&ghsh=0&ghacc=0&ghpl=" target="_blank">Kharagpur</a></li>
+                           </ul>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </section>
+         <!-- End Venue Section -->
+         <section id="registration" class="section-with-bg" style="
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531221/img3_tiv2jk.jpg');
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         color: white;
+      ">
+         <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2 style="color: white;">Registration</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:yellow; margin: 50px 0;">Please read the BROCHURE carefully before registering yourself.</h3>
+                    <hr style="height:2px;background-color:red">
+                    <a href="https://drive.google.com/file/d/1xWotWc0Q7wNlQsw4tz1urzUKOIiZussG/view?usp=sharing" download target="_blank" data-bs-auto-close="true"><h3 style="color: red;"><strong>DOWNLOAD Document for BROCHURE-SME-2025</strong></h3></a>
+                    
+                </div>
+            </div><br>
+	<div class="row contact-info">
+        <div >
+        <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+        <h3 style="color: red; text-align:center;"><strong><a href="https://forms.gle/8DGonHoSAaLsZUnd9" target="_blank">Register Here</a></strong></h3>
+        </div>
+        </div>
+        </div>
+		
+            
+         </div>
+      </section>
+
+         <section id="awards" class="section-with-bg" style="
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531178/DSC_8351_mvga6r.jpg');
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         color: white;
+      ">
+         <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2 style="color: white;">Awards</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 style="color: white; margin: 50px 0;">SME-2025 Awards (Citation + Cash Prize)</h2>
+                    <h3 style="color: yellow;">[Valid Student Id is required for PhD Scholars/UG/PG Students]</h3>
+			<h3 style="color: yellow;">[Valid Id issued by affiliated organization is required  during the seminar for Award Selection Process]</h3>
+                    <hr style="height:2px;background-color:red">
+                        
+                        <a href="https://drive.google.com/file/d/14u8Uqyqn4em8I6QBdzs4ay-UYLk6jtNO/view?usp=sharing" download target="_blank" data-bs-auto-close="true"><h4 style="color: red;"><strong>DOWNLOAD Detailed Document for SME-2025 Awards (Citation + Cash Prize)</strong></h4></a>
+                </div>
+            </div>
+         </div>
+      </section>
+
+         <section id="publicity" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741532822/1644904610179_1_zp030w.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2 style="color: white;">Publicity</h2>
+                  
+               </div>
+               <div class="row contact-info">
+                  <!-- Executive Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h2 style="text-align:center;color: white;"><strong>Sponsorships</strong></h2>
+                        <div class="row">
+                           
+                              <br>
+                              <p style="text-align: justify; margin-bottom: 30px; color:yellow;">
+                                 An organization sponsoring/co-sponsoring/supporting will find its name in the seminar publicity literature and will be displayed prominently at the seminar venue.
+                              </p>
+                              <table class="table" style="color: rgba(0, 0, 0, 0.5);">
+                                 <tbody>
+                                    <tr>
+                                       <td>Diamond Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 6,00,000 or more (20 delegates free)</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Platinum Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 5,00,000 or more (15 delegates free)</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Gold Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 3,50,000 or more (8 delegates free)</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Silver Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 2,00,000 or more (3 delegates free)</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Bronze Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 1,00,000 or more (2 delegates free)</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Co-Sponsorship</td>
+                                       <td>:</td>
+                                       <td>Rs. 50,000 or more (1 delegate free)</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Local Organizing Committee Column -->
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h2 style="text-align:center;color: white;"><strong>Abstract Volume Advertisements</strong></h2>
+                        
+                        
+
+                        <!-- Other Members Row -->
+                        <div class="row">
+                           <br>
+                              <p style="text-align: justify; margin-bottom: 30px; color:yellow;">
+                                 An organization can advertise itself and will find its advertisement in the seminar publicity literature on the cover page or as an independent page as per below.
+                              </p>
+                           <table class="table">
+                              <tbody>
+                                 <tr>
+                                    <td>Type of Advertisement</td>
+                                    <td>:</td>
+                                    <td>Cost (in Rs.)</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Back Cover (Colour)</td>
+                                    <td>:</td>
+                                    <td>Rs. 50,000 + GST@18%</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Inside Cover (Colour)</td>
+                                    <td>:</td>
+                                    <td>Rs. 30,000 + GST@18%</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Inside Full Page (Colour)</td>
+                                    <td>:</td>
+                                    <td>Rs. 25,000 + GST@18%</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Inside Full Page (B&W)</td>
+                                    <td>:</td>
+                                    <td>Rs. 15,000 + GST@18%</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Inside Half Page (B&W)</td>
+                                    <td>:</td>
+                                    <td>Rs. 10,000 + GST@18%</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br><br><br>
+               
+               <div class="row contact-info">
+   
+
+                  <!-- Local Organizing Committee Column -->
+                  <div >
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        
+                        
+                           
+                              <h2 style="text-align:center;color: white;"><strong>Stalls/ Exhibitions</strong></h2>
+                              
+                              
+      
+                              <!-- Other Members Row -->
+                              
+                                 <br>
+                                    <p style="text-align: justify; margin-bottom: 30px; color:yellow;">
+                                       Exhibiting with SME-2025 is an excellent opportunity to distribute your Company’s information and network with global participants, industry leaders and policy makers. You are requested to book an Exhibition Stall before March 10, 2025 in the seminar premises to showcase the capabilities of your Company. The tariff details for each stall are given below:
+                                    </p>
+                                 <table class="table">
+                                    <tbody>
+                                       <tr>
+                                          <td>Exhibition Stall Size</td>
+                                          <td>:</td>
+                                          <td>Tariff (in Rs.)</td>
+                                       </tr>
+                                       <tr>
+                                          <td>2 M (W) × 8 M (L)</td>
+                                          <td>:</td>
+                                          <td>₹ 50,000 + GST@18%</td>
+                                       </tr>
+                                       <tr>
+                                          <td>3 M (W) × 6 M (L)</td>
+                                          <td>:</td>
+                                          <td>₹75,000 + GST@18%</td>
+                                       </tr>
+                                       <tr>
+                                          <td>3 M (W) × 10 M (L)</td>
+                                          <td>:</td>
+                                          <td>₹1,00,000 + GST@18%</td>
+                                       </tr>
+                                       
+                                    </tbody>
+                                 </table>
+                                 <br>
+                                    <p style="text-align: justify; margin-bottom: 30px; color:yellow;">
+                                       Tariff includes adequate spot lights, plug point 5/15-amp, chairs, tables and waste bin. Tariff also includes breakfast, lunch and dinner of two persons. Half an hour technical presentation (power-point slides) in one selected technical session on the operation and applications of the products is also included. 
+                                    </p>
+                                 
+                              </div>
+                           
+                        </div>
+               </div><br>
+            </div>
+         </section>
+   
+		 
+		 
+		 <!-- 
+    <section id="supporters" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+         <div class="row">
+            
+            <div class="col-lg-6">
+               <div class="section-header">
+                  <h2>Sponsorship</h2>
+               </div>
+               <p style="text-align: justify; margin-bottom: 30px;">
+                  An organization sponsoring/co-sponsoring/supporting will find its name in the seminar publicity literature and will be displayed prominently at the seminar venue
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td>Diamond Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 6,00,000 or more (20 delegates free)</td>
+                     </tr>
+                     <tr>
+                        <td>Platinum Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 5,00,000 or more (15 delegates free)</td>
+                     </tr>
+                     <tr>
+                        <td>Gold Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 3,50,000 or more (8 delegates free)</td>
+                     </tr>
+                     <tr>
+                        <td>Silver Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 2,00,000 or more (3 delegates free)</td>
+                     </tr>
+                     <tr>
+                        <td>Bronze Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 1,00,000 or more (2 delegates free)</td>
+                     </tr>
+                     <tr>
+                        <td>Co-Sponsorship</td>
+                        <td>:</td>
+                        <td>Rs. 50,000 or more (1 delegate free)</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+
+            
+            <div class="col-lg-6">
+               <div class="section-header">
+                  <h2>Advertisement</h2>
+               </div>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td>Back Cover (Colour)</td>
+                        <td>:</td>
+                        <td>Rs. 50,000/-</td>
+                     </tr>
+                     <tr>
+                        <td>Inside Cover (Colour)</td>
+                        <td>:</td>
+                        <td>Rs. 30,000/-</td>
+                     </tr>
+                     <tr>
+                        <td>Inside Full Page (Colour)</td>
+                        <td>:</td>
+                        <td>Rs. 25,000/-</td>
+                     </tr>
+                     <tr>
+                        <td>Inside Full Page (B & W)</td>
+                        <td>:</td>
+                        <td>Rs. 15,000/-</td>
+                     </tr>
+                     <tr>
+                        <td>Inside Half Page (B & W)</td>
+                        <td>:</td>
+                        <td>Rs. 10,000/-</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+
+          
+         <div class="row no-gutters supporters-wrap clearfix justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+             
+         </div>
+      </div>
+    </section>Existing Sponsors Logo Section -->
+		  
+         <!-- ======= Hotels Section ======= 
+         <section id="hotels" class="section-with-bg">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2>Accommodation</h2>
+                           <p>Guest Houses, Hostels and nearby Hotels </p>
+               </div>
+                     
+                     <ul class="faq-acc">
+                           <li class="faq">
+                              <div data-bs-toggle="collapse" class="collapsed question" href="#gh"><b>Guest House</b> <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                              <div id="gh" class="collapse" data-bs-parent=".faq-acc">
+                                 <p>
+                                 <ul>
+                                    <div class="col-lg-3 col-md-4">
+                               <div class="hotel">
+                                 <div class="hotel-img">
+                                    <img src="assetscon/img/hotels/edc.jpg" alt="Guest House (EDC)" class="img-fluid">
+                                 </div>
+                                 <h3>Guest House (EDC)</a></h3>
+                                 <p>100 m from the Venue. <br> Twin sharing <br> </p>
+                               </div>
+                             </div>
+                                 </ul>
+                     </p>
+                  </div>
+                           </li>
+                       
+         
+                       
+                           <li class="faq">
+                              <div data-bs-toggle="collapse" class="collapsed question" href="#hostel"><b>Hostels</b> <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                              <div id="hostel" class="collapse" data-bs-parent=".faq-acc">
+                           
+                           <div class="row" data-aos="fade-up" data-aos-delay="100">
+                           
+                                    <div class="col-lg-3 col-md-4">
+                               <div class="hotel">
+                                 <div class="hotel-img">
+                                    <img src="assetscon/img/hotels/rosaline.jpg" alt="Girls Hostel"  class="img-fluid">
+               </div>
+                                 <h3>Rosaline Girls' Hostel</h3>
+                                 <p>200 m from the Venue. <br> Twin sharing - for girls only</p>
+                               </div>
+                             </div>
+         
+                             <div class="col-lg-3 col-md-4">
+                               <div class="hotel">
+                                 <div class="hotel-img">
+                                    <img src="assetscon/img/hotels/sapphire.jpg" alt="Boys Hostel 1"  class="img-fluid">
+                                 </div>
+                                 <h3>Sapphire Boys' Hostel</h3>
+                                 <p>200 m from the Venue. <br> Twin sharing - for boys only</p>
+                               </div>
+                             </div>
+                             
+                             <div class="col-lg-3 col-md-4">
+                               <div class="hotel">
+                                 <div class="hotel-img">
+                                    <img src="assetscon/img/hotels/amber.jpg" alt="Boys Hostel 2"  class="img-fluid">
+                                 </div>
+                                 <h3>Amber Boys' Hostel</h3>
+                                 <p>100 m from the Venue. <br> Twin sharing - for boys only</p>
+                               </div>
+                             </div>
+                             
+                             <div class="col-lg-3 col-md-4">
+                               <div class="hotel">
+                                 <div class="hotel-img">
+                                    <img src="assetscon/img/hotels/aquamarine.jpg" alt="Boys Hostel 3"  class="img-fluid">
+                                    
+                                 </div>
+                                 <h3>Aquamarine Boys' Hostel</h3>
+                                 <p>100 m from the Venue. <br> Twin sharing - for boys only</p>
+                               </div>
+                             </div>
+         
+                              </div>
+                         <p><a style="color:red;"  target="_blanck"><b>Click here for hostel booking support.</b></a></p>
+         
+                         </div>
+                           </li>
+                           <li class="faq">
+         
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#hot"><b>Hotels</b> <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                              <div id="hot" data-bs-parent=".faq-acc">
+                                 
+                     <div class="row" data-aos="fade-up" data-aos-delay="100">
+                           
+                           <div class="col-lg-3 col-md-4">
+                              <div class="hotel">
+                                 <div class="hotel-img">
+                                    <a   target="_blanck"> <img src="assetscon/img/hotels/sonotel.jpg" alt="Sonotel"  class="img-fluid"> </a>
+                              <h3><a   target="_blanck">Hotel - Sonotel</a></h3>
+                                 <p><a   target="_blanck">4 kms from the Venue. <br>
+                                  </a>
+                                 </div>
+                              </div>
+                           </div>
+                       
+                           <div class="col-lg-3 col-md-4">
+                              <div class="hotel">
+                                 <div class="hotel-img">
+                                    <a   target="_blanck"> <img src="assetscon/img/hotels/homely.jpg" alt="Homely Stay"  class="img-fluid"> </a>
+                              <h3><a   target="_blanck">Hotel - Homely Stay</a></h3>
+                                 <p><a   target="_blanck">2 kms from the Venue. <br>
+                                 </a>
+                                 </div>
+                              </div>
+                           </div>
+                       
+                           <div class="col-lg-3 col-md-4">
+                              <div class="hotel">
+                                 <div class="hotel-img">
+                                    <a   target="_blanck"> <img src="assetscon/img/hotels/indramani.jpg" alt="Indramani Palace"  class="img-fluid"> </a>
+                              <h3><a   target="_blanck">Hotel - Indramani Palace</a></h3>
+                                 <p><a   target="_blanck">3.5 kms from the Venue. <br>
+                                 </a>
+                                 </div>
+                              </div>
+                           </div>
+                       
+                       <div class="col-lg-3 col-md-4">
+                              <div class="hotel">
+                                 <div class="hotel-img">
+                                    <a   target="_blanck"> <img src="assetscon/img/hotels/bluemoon.jpg" alt="Blue Moon"  class="img-fluid"> </a>
+                              <h3><a   target="_blanck">Hotel - Blue Moon</a></h3>
+                                 <p><a   target="_blanck">4 kms from the Venue. <br>
+                                 </a>
+                                 </div>
+                              </div>
+                           </div>
+                       
+                        </div>
+                     
+         
+            </div>
+         </section>
+           -->
+               
+         <section id="accomodations" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531120/1234_d7q5l1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2 style="color: white;">Accomodations</h2>
+                  <h5 style="color: yellow; text-align:center;">Guest Houses, Hostels and nearby Hotels</h5>
+               </div>
+               <div class="row contact-info" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;align-items: center;">
+                  <h3 style="color: white; text-align:center;">Guest House</h3>
+               
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; text-align: center;">
+                         <h4 style="color: yellow;">EDC</h4>
+                         <div class="hotel-img">
+                             <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531126/edc_cpe8ai.jpg" alt="EDC" class="img-fluid" style="display: block; margin: 0 auto;">
+                         </div>
+                         <ul style="list-style: none; padding: 0;">
+                             <li>100 m from the Venue.</li>
+                             <li>Twin sharing</li>
+                         </ul>
+                     </div>
+                 </div>
+                 
+                  
+               </div>
+               <br>
+               <div class="row contact-info" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; text-align: center;">
+                  <h3 style="color: white; text-align:center;">Hostels</h3>
+               
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Rosaline Girls' Hostel</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531222/rosaline_rtkxjl.jpg" alt="Rosaline Girls' Hostel" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>200 m from the Venue.</li><li>Twin sharing- only for girls</li></ul> 
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Sapphire Boys' Hostel</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531223/sapphire_irac7k.jpg" alt="Sapphire Boys' Hostel" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>200 m from the Venue.</li><li>Twin sharing- only for boys</li></ul>  
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Amber Boys' Hostel</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531121/amber_aioy7j.jpg" alt="Amber Boys' Hostel" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>100 m from the Venue.</li><li>Twin sharing- only for boys</li></ul>  
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Aquamarine Boys' Hostel</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531121/aquamarine_bpvs21.jpg" alt="Aquamarine Boys' Hostel" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>100 m from the Venue.</li><li>Twin sharing- only for boys</li></ul>  
+                     </div>
+                  </div>
+               </div>
+<br>
+               <div class="row contact-info" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;text-align: center;" >
+                  <h3 style="color: white; text-align:center;">Nearby Hotels</h3>
+                   
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Hotel- Sonotel</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531225/sonotel_zmh7dq.jpg" alt="Hotel- Sonotel" class="img-fluid" style="width: 93%;">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>4 Km from the Venue.</li></ul>       
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Hotel- Homely Stay</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531129/homely_t1dybu.jpg" alt="Hotel- Homely Stay" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>2 Km from the Venue.</li></ul>      
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-address" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Hotel- Indramani Palace</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531199/indramani_cfdvxz.jpg" alt="Hotel- Indramani Palace" class="img-fluid" style="width: 100%;">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>3.5 Km from the Venue.</li></ul>    
+                     </div>
+                  </div>
+                  <div class="col-md-6" style="margin-top: 5%;">
+                     <div class="contact-phone" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                        <h4 style="color: yellow; text-align:center;">Hotel- Blue Moon</h4>
+                        <div class="hotel-img" style="align-self: center;">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531125/bluemoon_hmqfqc.jpg" alt="Hotel- Blue Moon" class="img-fluid">
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0;"><li>4 Km from the Venue.</li></ul>  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+                        
+
+      <section id="touristattractions" class="section-bg" style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531125/abcd_xzxoqv.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+         ">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2 style="color: white;">Tourist Attractions</h2>
+               </div>
+               <div class="row contact-info">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531233/paras_ud8sof.jpg" alt="Parasnath Hills" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://www.tripadvisor.in/Attraction_Review-g2295042-d3705336-Reviews-Parasnath_Hills-Giridih_Giridih_District_Jharkhand.html">Parasnath Hills</a></h4>
+                        <p>Parasnath Hills are a range of hills located in Giridih district of Jharkhand. It is one of the most important pilgrimage centre for Jains. There are a number of temples on the hills, some of them are believed to be more than 2,000 years old. Parasnath Hill is 81 km away from IIT (ISM) Dhanbad. By car one can reach in about 1 hr and 50 min.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531132/deoghar_y0vkdz.jpg" alt="trikuta-parvat" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://www.tripadvisor.in/Tourism-g1893710-Deoghar_Deoghar_District_Jharkhand-Vacations.html">Deoghar</a></h4>
+                        <p>Deoghar is a famous religious tourist spot in Jharkhand. It is primarily known for the Baidyanath Temple, one of the 12 Jyotirlingas of Shiva. Deoghar is 120 km away from IIT (ISM) Dhanbad. By car one can reach in 2 hr and 40 min.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531221/ranchi_cpfmqn.jpg" alt="patratu" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://www.tripadvisor.in/Tourism-g662320-Ranchi_Ranchi_District_Jharkhand-Vacations.html">Ranchi</a></h4>
+                        <p>Ranchi is the capital city of Jharkhand. A number of tourist attraction are there in Ranchi city and surrounding areas. Ranchi is about 152 km away from IIT (ISM) Dhanbad. By car one can reach in 4 hr and 15 min. One can also travel by Train.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531125/bodhgaya_gwdjm8.jpg" alt="Bodhi Tree" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://whc.unesco.org/en/list/1056/">Bodh Gaya</a></h4>
+                            <p>Bodh Gaya is a famous religious site associated with the Mahabodhi Temple (a UNESCO World Heritage Site), situated in the Gaya district of Bihar. Bodh Gaya is 207 km away from IIT (ISM) Dhanbad. By car one can reach in about 4 hr. One can also travel by Train.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531224/shanti_xnq8zb.jpg" alt="Shantiniketan" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://whc.unesco.org/en/list/1375/">Shantiniketan</a></h4>
+                        <p>Shantiniketan was declared as a UNESCO World Heritage Site in 2023. Established in 1901 by the renowned poet and philosopher Rabindranath Tagore and became a great center of art and culture. It is is 156 km away from Dhanbad. By car one can reach in about 3 hr and 15 min.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="hotel">
+                        <div class="hotel-img">
+                           <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531203/purulia_digwqn.jpg" alt="Purulia" class="img-fluid">
+                        </div>
+                        <h4 style="text-align: center;"><a href="https://www.tripadvisor.in/Tourism-g2406619-Purulia_Purulia_District_West_Bengal-Vacations.html">Purulia</a></h4>
+                        <p>Many tourists visit Purulia to witness the charm of the natural scenery. Purulia is home to traditional folk dance and culture like Chhou Dance and Jhumur Song. Purulia (town) is 63 km away from IIT (ISM) Dhanbad. By car one can reach in about 2 hr and 10 min.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      <section id="announcements" class="section-with-bg" style="
+             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531162/20211220_094805_qseref.jpg');
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             color: white;
+          ">
+             <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 style="color: white;">Announcements</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        
+                        <hr style="height:2px;background-color:red">
+                        
+                        <a href="https://docs.google.com/document/d/1CKbdvHOPe3wyUPXF6PHbpN-IZMOcWJM8/edit?usp=sharing&ouid=108992942253956731409&rtpof=true&sd=true" download target="_blank" data-bs-auto-close="true"><h4 style="color: red;"><strong>DOWNLOAD ANNOUNCEMENTS</strong></h4></a>
+                    </div>
+                </div>
+             </div>
+          </section>
+      
+      <section id="developers" class="section-bg" style="
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531123/background_glbbv6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+   ">
+      <div class="container" data-aos="fade-up">
+         <div class="section-header">
+            <h2 style="color: white;">Developers' Section</h2>
+         </div>
+            
+            <div class="row contact-info">
+               <div class="col-md-4" style="margin-top: 5%;">
+                  <div class="contact-addresses" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; text-align:center">
+                     <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531208/RIYA_Photo_av2gcs.jpg" alt="Riya Singh Rathore" class="img-fluid" style="width: 100%; border-radius: 10px;">
+                     <h3 style="color: white; margin-top: 5%;">Riya Singh Rathore</h3>
+                     <p style="color: white;">Mobile Number: <a href="tel:+91 8551032727" target="_blanck">+91 8551032727</a><br>
+                     E-mail ID: <a href="mailto:20je0801@agp.iitism.ac.in" target="_blanck">20je0801@agp.iitism.ac.in</a><br>
+                     LinkedIn ID: <a href="https://www.linkedin.com/in/riya-singh-rathore?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blanck">riya-singh-rathore</a></p>
+                  </div>
+               </div>
+               <div class="col-md-4" style="margin-top: 5%;">
+                  <div class="contact-addresses" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; text-align:center">
+                     <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531206/Pranjal_Srivastava_vzsplz.jpg" alt="Pranjal Srivastava" class="img-fluid" style="width: 100%; border-radius: 10px; ">
+                     <h3 style="color: white; margin-top: 5%;">Pranjal Srivastava</h3>
+                     <p style="color: white;">Mobile Number: <a href="tel:+91 8932983134" target="_blanck">+91 8932983134</a><br>
+                        E-mail ID: <a href="mailto:23je0732@iitism.ac.in" target="_blanck">23je0732@iitism.ac.in</a><br>
+                        LinkedIn ID: <a href="https://www.linkedin.com/in/pranjal-srivastava-0b4495289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blanck">pranjal-srivastava</a></p>
+                  </div>
+               </div>
+               <div class="col-md-4" style="margin-top: 5%;">
+                  <div class="contact-addresses" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; text-align:center">
+                     <img src="https://res.cloudinary.com/ddg8s5abe/image/upload/v1741531122/Arnab_Pramanik_ndpavu.jpg" alt="Arnab Pramanik" class="img-fluid" style="width: 100%; border-radius: 10px; ">
+                     <h3 style="color: white; margin-top: 5%;">Arnab Pramanik</h3>
+                     <p style="color: white;">Mobile Number: <a href="tel:+91 6297692784" target="_blanck">+91 6297692784</a><br>
+                        E-mail ID: <a href="mailto:23je0150@iitism.ac.in" target="_blanck">23je0150@iitism.ac.in</a><br>
+                        LinkedIn ID: <a href="https://www.linkedin.com/in/arnab-pramanik-2921572b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blanck">arnab-pramanik</a></p>
+                  </div><br><br><br>
+               </div>
+               <br><br><br><br>
+               <div class="row contact-info" style=" text-align:centre; margin:auto; background-color: #800000; color: white; padding: 15px 15px;">
+                  <div class="col-md-4"><br>
+                      <div class="contact-address" style="margin-bottom: 0;">
+                          <p style="margin: 0; font-size: 0.9em;">
+                           
+                              Department of Applied Geophysics, IIT(ISM),<br>
+                              Dhanbad - 826 004, Jharkhand, India
+                          </p>
+          </div>
+             </div>
+                  <div class="col-md-4"><br>
+                      <div class="contact-phone" style="margin-bottom: 0;">
+                          <p style="margin: 0; font-size: 0.9em;">
+                              <a href="tel:+913262235465" style="color: white;">+91-326-2235465 (O)</a> <br>
+                              <a href="tel:+919431711020" style="color: white;">+91-94317-11020 (R)</a>
+                              
+                          </p>
+                </div>
+                   </div>
+                  <div class="col-md-4"><br>
+                      <div class="contact-email" style="margin-bottom: 0;">
+                          <p style="margin: 0; font-size: 0.9em;">
+                              <a href="mailto:sme.2025@iitism.ac.in" style="color: white;">sme.2025@iitism.ac.in</a><br>
+                              &copy; Copyright <strong>SME 2025</strong>. All Rights Reserved
+                          </p>
+                   </div><br>
+                </div>
+                
+             </div>
+             
+            </div>
+            
+      </div>
+   </section>
+      <!-- ======= Footer ======= -->
+        <!-- <footer id="footer" style="background-color: #800000; color: white; ">-->
+         <!--
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+            
+                  <div class="col-lg-3 col-md-6 footer-info">
+                    <img src="assetscon/img/logo.png" alt="TheEvenet">
+                    <p>Short text on the conference.</p>
+                  </div>
+            
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                      Department of Physics <br>
+                      Indian Institute of Technology (ISM) Dhanbad<br>
+                      Jharkhand - 826004, India <br>
+                      <strong>Phone:</strong> +91 326 223 5406<br>
+                      <strong>Email:</strong> bobby@iitism.ac.in<br>
+                    </p>
+            
+                    <div class="social-links">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+            
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+            -->
+         <div class="container">
+            
+            <div class="credits">
+               <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                  -->
+                  <a style="color: white;" href="https://bootstrapmade.com/"></a>
+            </div>
+         </div>
+      </footer>
+         <!-- End Footer -->
+      <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <!-- Vendor JS Files -->
+      <script src="script1.js"></script>
+      <script src="script2.js"></script>
+      <script src="script3.js"></script>
+      <script src="script4.js"></script>
+      <script src="script5.js"></script>
+      <!-- Template Main JS File -->
+      <script src="script6.js"></script>
+         <!-- Add this script at the end of your body tag -->
+         <script>
+            // Parallax effect
+            window.addEventListener('scroll', function() {
+                if (window.innerWidth >= 768) {
+                    const scrolled = window.pageYOffset;
+                    const parallaxOffset = scrolled * 0.5;
+                    document.querySelector('.hero-container').style.setProperty('--parallax-offset', parallaxOffset + 'px');
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all sections
+                const sections = document.querySelectorAll('section');
+                
+                // Add intersection observer to handle active state in navigation
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Rest of your existing observer code...
+                            document.querySelectorAll('.nav-link').forEach(el => {
+                                el.classList.remove('active');
+                            });
+                            
+                            const id = entry.target.getAttribute('id');
+                            const correspondingLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                            
+                            if (correspondingLink) correspondingLink.classList.add('active');
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+
+                // Observe all sections
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+
+                // Smooth scroll handling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        if (targetId !== '#') {
+                            const targetSection = document.querySelector(targetId);
+                            if (targetSection) {
+                                targetSection.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Add click handlers for dots
+                document.querySelectorAll('.dot').forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        const section = dot.getAttribute('data-section');
+                        document.getElementById(section).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            });
+         </script>
+         
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+      </main>
+      <!-- End #main -->
+   </body>
+</html>
